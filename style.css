@@ -1,0 +1,115 @@
+:root {
+    --width-mobile: 375px;
+    --width-desktop: 1440px;
+
+    --primary-cyan: hsl(158, 36%, 37%);
+    --primary-cream: hsl(30, 38%, 92%);
+
+    --neutral-very-dark-blue: hsl(212, 21%, 14%);
+    --neutral-dark-grayish-blue: hsl(228, 12%, 48%);
+    --neutral-white: hsl(0, 0%, 100%);
+
+    --fz-paragraph: 14px;
+    --ff-paragraph: 'Montserrat', sans-serif;
+    --ff-title: 'Fraunces', sans-serif;
+}
+
+body { 
+    margin: 0;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+    background-color: var(--primary-cream);
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    max-width: var(--width-mobile);
+    display: flex;
+    flex-direction: column;
+    background-color: var(--neutral-white); 
+    border-radius: 10px;
+}
+
+.cabecera {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.img-product{
+    max-width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.info {
+    display: block;
+    background-color: var(--neutral-white);
+    color: var(--neutral-dark-grayish-blue);
+    border-radius: 0 0 10px 10px;
+}
+
+.category {
+    font-family: var(--ff-paragraph);
+    font-size: var(--fz-paragraph);
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: .4rem;
+    margin-top: 20px;
+    padding-left: 2rem;
+}
+
+.title {
+    font-family: var(--ff-title);
+    color: black;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+p {
+    font-family: var(--ff-paragraph);
+    font-size: var(--fz-paragraph);
+    text-align: left;
+    line-height: 1.8;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+}
+
+.cost {
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.price {
+    color: var(--primary-cyan);
+    font-family: var(--ff-title);
+    font-size: 2rem;
+    padding-right: 1.2rem;
+}
+
+.discount {
+    font-family: var(--ff-paragraph);
+    text-decoration: line-through;
+}
+
+.button {
+    display: block;
+    background-color: var(--primary-cyan);
+    color: var(--neutral-white);
+    text-decoration: none;
+    font-family: var(--ff-paragraph);
+    font-weight: bold;
+    text-align: center;
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+    margin: 2rem;
+    transition: all .3s ease;
+}
+
+.button:hover {
+    background-color: var(--neutral-very-dark-blue)
+}
